@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN pour CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>3/ Classes utiles</title>
+</head>
+<body>
+    <!-- changer couleur de la div et du texte -->
+    <h1 id="intro">Cours Bootstrap 5</h1>
+    <h2>3/ Classes utiles:</h2>
+    <h3 class="h4 text-decoration-underline">3.1/ Changer la couleur du texte depuis une div:</h3>
+    <p class="lead">
+       On peut déterminer la couleur du texte dans une div avec la classe <code>text-[couleurs]</code>. 
+    </p>
+    <div class="text-white bg-primary lead">
+        Et on peut changer la couleur de fond d'un élément avec la classe <code>bg-[couleur]</code>
+    </div>
+    
+    <!-- margin padding -->
+    <h3 class="h4 text-decoration-underline">3.2/ margin et padding:</h3>
+    <p class="lead">
+       Pour modifier le margin et le padding d'un élément, on utilise les classes <code>m-[1:5] p-[1:5]</code>
+    </p>
+
+    <div class="bg-primary text-white m-1 p-1">
+        Petit margin et petit padding: m-1 p-1
+    </div>
+    <div class="bg-primary text-white m-5 p-5">
+        Grand margin et grand padding: m-5 p-5
+    </div>
+
+    <p class="lead">
+        On peut spécifier sur quel axe ajouter le margin et la padding en ajoutant, x pour l'axe horizontal, et y pour l'axe verticale.
+        <code>mx-[1:5] my-[1:5] px-[1:5] py-[1:5] </code> 
+     
+     <div class="bg-primary text-white my-2 px-5">
+         marign dur y et passin sur x: my-2 px-5
+     </div>
+     <div class="bg-primary text-white my-2 mx-5 py-1 px-5">
+        marign sur x et y et padding sur x et y: my-2 mx-5 py-1 px-5
+    </div>
+    
+    <p class="lead">
+        On peut être plus precis en ajoutant t(top), b(bottom), s(start), e(end). <code>m[t|b|s|e]-[1:5] p[t|b|s|e]-[1:5]</code>
+    </p>
+    <div class="bg-primary text-white ms-5 me-1 pt-4 pb-2">
+        margin et padding spécifique: ms-5 me-1 pt-4 pb-2
+    </div>
+
+     <!-- bordure / border -->
+     <h3 class="h4 text-decoration-underline">3.3/ Bordures:</h3>
+     <p class="lead">
+       Pour ajouter des bords à un élément on peut utiliser classe <code>border</code>
+     </p>
+     <div class="m-3 p-3 border">
+        Bordures par défaut: border
+     </div>
+     <!-- couleurs des bordures -->
+     <p class="lead">
+        Pour modifier la couleur de la bordure, on ajoute la classe <code>border-[couleurs]</code> 
+      </p>
+      <div class="m-3 p-3 border border-primary">
+          Bordures en couleur: border border-primary
+      </div>
+      <!-- bordures individuelles -->
+      <p class="lead">
+        On peut être plus spécifique, et choisir quelle bordure afficher avec la classe <code>border-[top|bottom|start|end]</code>
+      </p>
+      <div class="m-3 p-3 border-top border-bottom border-warning">
+          Bordures individuelles en couleur:  border-top border-bottom border-warning 
+      </div>
+      <div class="m-3 p-3 border-start border-end border-success">
+        Bordures individuelles en couleur:  border-top border-bottom border-warning 
+    </div>
+
+    <!-- largeur des bordures -->
+        <p class="lead m-2 p-2">
+        On peut modifier la largeur des bordures avec la classe <code>border-[1:5]</code>
+         </p>
+      <div class="m-3 p-3 border-start border-danger border-5">
+          Bordure large: border-5
+      </div>
+    
+      <!-- bordures arrondies -->
+      <p class="lead m-2 p-2">
+       On peut arrondir les bordures avec la classe <code>rounded</code> ou <code>rounded-pill</code>
+        </p>
+        <div class="m-3 p-3 border border-primary rounded">
+            Bordures arrondies: rounded
+        </div>
+        <div class="m-3 p-3 border border-primary rounded-pill">
+            Bordures plus arrondies: rounded-pill
+        </div>
+
+        <!-- ombres -->
+        <h3 class="h4 text-decoration-underline m-1 p-1">3.4/ Les ombres:</h3>
+        <p class="lead m-2 p-2">
+          Pour ajouter une ombres a un élément, on utlise la classe <code>shadow</code> et pour modifier la taille de l'ombre on peut ajouter la classe <code>shadow-[sm|md|lg]</code>
+        </p>
+        <div class="m-3 p-3 shadow">
+            Ombre par défaut: shadow
+        </div>
+        <div class="m-3 p-3 shadow shadow-sm">
+            Ombre plus petite: shadow-sm
+        </div>
+    
+        <!-- boutons de navigation -->
+        <h3 class="h4 m-1 p-1">Etape suivante</h3>
+        <div class="btn-group m-2 p-2">
+            <a href="./2-Boutons.html" class="btn btn-danger"> <- Les boutons </a>
+            <a href="#intro" class="btn btn-warning">Haut de la page</a>
+            <a href="./4-Containers.html" class="btn btn-success">Les containers -></a>
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

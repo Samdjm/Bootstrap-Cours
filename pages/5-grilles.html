@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN pour CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>5/ Les grilles</title>
+</head>
+<body class="container justify-content-center">
+    <h1 id="intro" class="m-1 p-1">Cours Bootstrap 5</h1>
+    <h2 class="m-2 p-2">5/ Les grilles:</h2>
+    <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank" class="btn btn-outline-primary shadow p-2 m-5 rounded">Documentation: grids</a>
+    
+    <div class="container m-3 p-3 border rounded">
+        <h3 class="h4 m-3 p-3  text-decoration-underline">5.1/ Grilles par défaut:</h3>
+        <p class="lead m-3 p-3">
+          Les grille peuvent contenir jusqu'a 12 colonnes, et être mus dans un container. Pour les lignes on utlise la classe <code>row</code> et pour les colonnes on utilise la classe <code>col</code>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-5 bg-primary text-white">
+                    colonne 4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- largeur des colonnes -->
+    <div class="container m-3 p-3 border rounded">
+        <h3 class="h4 m-3 p-3 text-decoration-underline">5.2/ Largeur des colonnes:</h3>
+        <p class="lead m-3 p-3">
+          On peut déterminer le nombre colonnes qu'un élément peut prendre avec classe <code>col-[1:12]</code>
+        </p>
+        <div class="row">
+            <div class="col-6">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <!-- colonnes reponsive -->
+     <div class="container m-3 p-3 border rounded">
+        <h3 class="h4 m-3 p-3 text-decoration-underline">5.2/ Largeur des colonnes:</h3>
+        <p class="lead m-3 p-3">
+          On peut déterminer le nombre colonnes qu'un élément peut prendre avec classe <code>col-[1:12]</code>
+        </p>
+        <div class="row">
+            <div class="col-3 col-sm-4 col-md-6 col-lg-4">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3 col-sm-4 col-md-3 col-lg-4">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3 col-sm-4 col-md-3 col-lg-4">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+     <!-- Placement -->
+     <div class="container m-3 p-3 border rounded">
+        <h3 class="h4 m-3 p-3 text-decoration-underline">5.3/ Placement des colonnes:</h3>
+        <p class="lead m-3 p-3">
+          On peut décider du placement des colonnes dans une ligne avec la classe:
+          <code>justify-content-[start|center|end|between|around]</code>
+        </p>
+        <!-- placement par défaut -->
+        <p class="lead m-3 p-3">
+            Placement par défaut ou start: justify-content-start
+        </p>
+        <div class="row">
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+        </div>
+        <!-- placement avec center -->
+        <p class="lead m-3 p-3">
+            Placement avec center: justify-content-center
+        </p>
+        <div class="row justify-content-center my-2">
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+        </div>
+
+         <!-- placement avec end -->
+         <p class="lead m-3 p-3">
+            Placement avec end: justify-content-end
+        </p>
+         <div class="row justify-content-end my-2">
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+        </div>
+         <!-- placement avec between -->
+         <p class="lead m-3 p-3">
+            Placement between: justify-content-between
+        </p>
+         <div class="row justify-content-between my-2">
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+        </div>
+
+         <!-- placement avec around -->
+         <p class="lead m-3 p-3">
+            Placement around: justify-content-around
+        </p>
+         <div class="row justify-content-around my-2">
+            <div class="col-3 ">
+                <div class="p-5 bg-primary text-white">
+                    colonne 1
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 2
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="p-5 bg-primary text-white">
+                    colonne 3
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!--  Espace entre les colonnes -->
+    <div class="container m-3 p-3 border rounded">
+        <h3 class="h4 m-3 p-3 text-decoration-underline">5.4/ Espace entre les colonnes:</h3>
+        <p class="lead m-3 p-3">
+          On peut déterminer l'espace entre les colonnes avec la classe <code>g-[0:5]</code>
+        </p>
+        <p class="lead m-3 p-3">
+          Espace avec: g-5
+          </p>
+        <div class="row g-5">
+            <div class="col-4">
+                <div class="bg-primary text-white p-5">
+                    Colonne 1
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="bg-primary text-white p-5">
+                    Colonne 2
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="bg-primary text-white p-5">
+                    Colonne 3
+                </div>
+            </div>
+        </div>
+
+        <p class="lead m-3 p-3">
+            Espace avec: g-1
+            </p>
+          <div class="row g-1">
+              <div class="col-4">
+                  <div class="bg-primary text-white p-5">
+                      Colonne 1
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="bg-primary text-white p-5">
+                      Colonne 2
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="bg-primary text-white p-5">
+                      Colonne 3
+                  </div>
+              </div>
+          </div>
+    </div>
+  
+    <!-- boutons de navigation -->
+    <h3 class="h4">Etape suivante</h3>
+    <div class="container-fluid btn-group row mb-5 p-0 justify-content-center">
+        <a href="./1-Couleurs-typographie.html" class="btn btn-danger col-4"> <- Couleur et typographie </a>
+        <a href="#intro" class="btn btn-warning col-3">Haut de la page</a>
+        <a href="./6-Navbar.html" class="btn btn-success col-4">La Navbar -></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
